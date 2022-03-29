@@ -18,6 +18,46 @@ Of course, you should unzip the assignment material to your local file system (p
 
 ### Gettting Started:
 
+### Step 1:  Begin with these steps to repository setup:
+
+This section is previously used for the instruction for GitHub repo setting up. Since we're using the Bruin Learn platform now, you don't need to do the setup. Feel free to continue with the next step. 
+
+Of course, you should unzip the assignment material to your local file system (please unzip if you're reading this line inside the compression file preview now) and you can optionally use git to control your version.
+
+### Step 2:  Now follow these steps to run and modify your project:
+
+1. Go to your folder.  The easiest way is to right click the popup that downloaded it, then choose ``Show in Folder``.
+
+   ![icons](docs/image-01.png)
+
+2. You should see the file index.html in your folder.  You can already try clicking that open to see the code run on your machine... mostly.  This is a start; you'll see an animation.  But this isn't good enough.  Your animation is still unable to load local files (texture images, sounds, models) out of your own file-system, due to its safety protections against your web browser.
+
+   ![triangle](docs/image-02.png)
+
+3. Run a fake server. which lacks those security protections.  Do this by opening the file we gave you called ``host`` -  ``host.bat`` if you're Windows, ``host.command`` if your Mac. On Windows you can just double click the file open.
+   * **On Mac, you might get a security warning instead if you double-click.**  Instead, right click the files, then choose Open, or you can go into System Preferences/Security & Prinvacy/General and click 'Open Anyway'. You may possibly need to check the file permissions and set them to 744.
+
+   ![dialog](docs/image-03.png)
+
+4. Look in the resulting console window.  If you can't find a message starting with ``Serving HTTP on ...``, your operating system might not have come with Python; go download and install that first -- use Google for help on that, then try our files again.
+
+   ![http server](docs/image-04.png)
+
+5. Now you're hosting. Keep that window open.
+
+6. Open a new window of Google Chrome.  Download it first if needed.
+
+   ![url bar](docs/image-05.png)
+
+7. Navigate Chrome to the url http://localhost:8000/
+That assumes that step 5's message said port 8000 - otherwise change the number in the URL to match.
+
+8. Observe that your project shows up at this new URL.  That's where you'll access it from now on.
+
+   ![triangle](docs/image-02.png)
+
+Unfortunately, web developers in practice have to do that fake server thing pretty often to be able to work on their files locally. **Keep the .bat or .command program open while you work.**
+
 When you open your project, you will see a file `assignmetn3.js` that draws a single Torus shape (donut).  Replace this scene with the solar system we specify in detail below. 
 
 Items in your code for you to fill in are marked `TODO`.  You can also edit code outside of there.
